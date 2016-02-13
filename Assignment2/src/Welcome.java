@@ -20,8 +20,8 @@ public class Welcome extends HttpServlet {
       out.println("<TABLE  BORDER='5' CELLSPACING ='3' CELLPADDING ='3'>");
         
         out.println("<tr>");
-        out.println("<th>Course Id</th>");
         out.println("<th>Course Name</th>");
+        out.println("<th>Course Id</th>");
         out.println("</tr>");
         out.println("<br>");
         for (int i = 0 ;i < c1.size(); i++)
@@ -30,8 +30,8 @@ public class Welcome extends HttpServlet {
         	System.out.println(c.getCourse_name());
         	System.out.println(c.getCourseId());
         	  out.print("<tr>");
-              out.print("<td> <input type='text' name='course_id' value='"+c.getCourse_name()+"' />  </td>");
-              out.print(" <td> <input type='text' name='course_name' value='"+c.getCourseId()+"' />   </td>");
+              out.print("<td> <input type='text' name='course_name' value='"+c.getCourse_name()+"' />  </td>");
+              out.print(" <td> <input type='text' name='course_id' value='"+c.getCourseId()+"' />   </td>");
               out.print("</tr>");
         	
         }
